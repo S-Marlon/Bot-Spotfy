@@ -33,17 +33,20 @@ cd youtube-podcast-bot
 
 
 pip install -r requirements.txt
+```
 
 requirements.txt
     | yt-dlp
     | feedgen
     | requests
+    
+```bash
 
 YOUTUBE_API_KEY=YOUR_YOUTUBE_API_KEY
 CHANNEL_ID=UCxxxxxxxxxxxxxxxx
 
 python main.py
-
+```
 
 youtube-podcast-bot/
 ├── main.py                  # Script principal que une todos os passos
