@@ -89,6 +89,5 @@ Este projeto deve ser usado apenas com permissão do criador do conteúdo. Baixa
 ---
 
 📩 Contato
-Desenvolvido por [Seu Nome]
-📧 seuemail@exemplo.com
-🌐 seusite.com
+Desenvolvido por Marlon Santos
+📧 Marlon.vcsantos@icloud.com
