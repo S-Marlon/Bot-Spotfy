@@ -2,8 +2,8 @@ import requests
 import json
 import os
 
-YOUTUBE_API_KEY = 'SUA_API_KEY'
-CHANNEL_ID = 'ID_DO_CANAL'
+YOUTUBE_API_KEY = 'AIzaSyBqL0SoxhnZlTACHxe8OHGDPOujock2G30'
+CHANNEL_ID = 'UCLTWPE7XrHEe8m_xAmNbQ-Q'
 ULTIMO_VIDEO_ARQUIVO = 'ultimo_video.json'
 
 def obter_ultimo_video():
