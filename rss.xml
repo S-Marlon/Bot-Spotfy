@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+  <channel>
+    <title>Meu Podcast</title>
+    <link>https://seusite.com/podcast</link>
+    <description>Podcast gerado automaticamente</description>
+    <language>pt-br</language>
+    <itunes:author>Seu Nome</itunes:author>
+    <itunes:explicit>no</itunes:explicit>
+
+    <item>
+      <title>Título do Episódio</title>
+      <description>Descrição do episódio</description>
+      <pubDate>Sat, 18 May 2025 17:00:00 +0000</pubDate>
+      <enclosure url="https://seusite.com/podcast/audio001.mp3" length="12345678" type="audio/mpeg" />
+      <guid>audio001</guid>
+    </item>
+
+    <!-- Novos <item> vão sendo adicionados automaticamente -->
+    
+  </channel>
+</rss>
