@@ -54,3 +54,26 @@ def upload_arquivo(caminho_local, nome_no_drive):
 
     print(f"✅ Arquivo enviado para a pasta 'bot-spotfy'. ID: {file.get('id')}")
     return file.get('id')
+
+
+def listar_audios_da_pasta():
+    creds = Credentials.from_authorized_user_file('token.json', SCOPES)
+    service = autenticar_drive()
+
+    query = f"'{PASTA_ID}' in parents and mimeType='audio/mpeg'"
+    resultados = service.files().list(q=query, fields="files(id, name, createdTime)").execute()
+    arquivos = resultados.get('files', [])
+
+    episodios = []
+    for arquivo in arquivos:
+        episodios.append({
+            'titulo': os.path.splitext(arquivo['name'])[0],
+            'descricao': f"Episódio gerado automaticamente: {arquivo['name']}",
+            'data': arquivo['createdTime'],
+            'url': f"https://drive.google.com/uc?export=download&id={arquivo['id']}"
+        })
+
+       
+        return episodios
+
+

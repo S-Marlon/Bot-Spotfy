@@ -2,6 +2,7 @@ import os
 from verificar_novos_videos import verificar_novo_video
 from baixar_audio import baixar_audio
 from drive import upload_arquivo
+from drive import listar_audios_da_pasta
 
 def limpar_nome_arquivo(titulo, video_id):
     nome = titulo.lower()
@@ -36,5 +37,9 @@ def main():
     drive_id = upload_arquivo(caminho_audio, nomeDrive)
     print(f"Arquivo enviado para o Google Drive. ID: {drive_id}")
 
+def opa():
+    episodio = listar_audios_da_pasta()
+    print(episodio)
+
 if __name__ == "__main__":
-    main()
+    opa()
