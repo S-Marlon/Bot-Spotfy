@@ -1,22 +1,26 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
-  <channel>
-    <title>Meu Podcast</title>
-    <link>https://seusite.com/podcast</link>
-    <description>Podcast gerado automaticamente</description>
-    <language>pt-br</language>
-    <itunes:author>Seu Nome</itunes:author>
-    <itunes:explicit>no</itunes:explicit>
-
-    <item>
-      <title>Título do Episódio</title>
-      <description>Descrição do episódio</description>
-      <pubDate>Sat, 18 May 2025 17:00:00 +0000</pubDate>
-      <enclosure url="https://seusite.com/podcast/audio001.mp3" length="12345678" type="audio/mpeg" />
-      <guid>audio001</guid>
-    </item>
-
-    <!-- Novos <item> vão sendo adicionados automaticamente -->
-    
-  </channel>
-</rss>
+    <rss version="2.0">
+    <channel>
+        <title>Podcast do Bot</title>
+        <link>https://drive.google.com/drive/folders/1HyUXJMzvlziH8ylb57Fta2zE8BHeDHD3</link>
+        <description>Podcast gerado automaticamente</description>
+        <language>pt-br</language>
+        
+        <item>
+            <title>6dud-BT6nss_MORAES decreta PRISÃO de ZAMBELLI e PROIBE FILHO e MÃE de TEREM REDES SOCIAIS</title>
+            <link>https://drive.google.com/uc?export=download&id=1PBhSNrIoSrv0zBnYlrGdj1OedDAwftCJ</link>
+            <guid>https://drive.google.com/uc?export=download&id=1PBhSNrIoSrv0zBnYlrGdj1OedDAwftCJ</guid>
+            <pubDate>Wed    , 04 Jun 2025 19:00:15 GMT</pubDate>
+            <enclosure url="https://drive.google.com/uc?export=download&id=1PBhSNrIoSrv0zBnYlrGdj1OedDAwftCJ" type="audio/mpeg"/>
+        </item>
+        
+        <item>
+            <title>SbJPTpcDDC0_LULA tem ARMAS SECRETAS: FAZER COMICIOS VAZIOS e jogar DINHEIRO FORA</title>
+            <link>https://drive.google.com/uc?export=download&id=1CeOP_a7iSXW_imzGdhTM5dFVXECGhlz9</link>
+            <guid>https://drive.google.com/uc?export=download&id=1CeOP_a7iSXW_imzGdhTM5dFVXECGhlz9</guid>
+            <pubDate>Mon, 26 May 2025 18:52:32 GMT</pubDate>
+            <enclosure url="https://drive.google.com/uc?export=download&id=1CeOP_a7iSXW_imzGdhTM5dFVXECGhlz9" type="audio/mpeg"/>
+        </item>
+        
+    </channel>
+    </rss>
