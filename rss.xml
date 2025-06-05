@@ -1,9 +1,17 @@
 <rss version="2.0">
     <channel>
-        <title>Podcast do Bot</title>
-        <link>https://drive.google.com/drive/folders/1HyUXJMzvlziH8ylb57Fta2zE8BHeDHD3</link>
-        <description>Podcast gerado automaticamente</description>
+        <title>Podcast Exemplo</title>
+        <link>https://site.com</link>
+        <description>Um podcast sobre Politic e Politic.</description>
         <language>pt-br</language>
+        <itunes:author>karl Oliveira</itunes:author>
+        <itunes:owner>
+            <itunes:name>karl</itunes:name>
+            <itunes:email>karl@email.com</itunes:email>
+        </itunes:owner>
+        <itunes:image href="https://seudominio.com/capa.jpg"/>
+        <itunes:category text="Politic"/>
+        <itunes:explicit>no</itunes:explicit>
         
         <item>
             <title>6dud-BT6nss_MORAES decreta PRISÃO de ZAMBELLI e PROIBE FILHO e MÃE de TEREM REDES SOCIAIS</title>
