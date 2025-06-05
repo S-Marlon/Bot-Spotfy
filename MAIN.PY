@@ -5,6 +5,8 @@ from drive import upload_arquivo
 from drive import listar_arquivos
 from datetime import datetime
 from drive import PASTA_ID
+import html
+
 
 def limpar_nome_arquivo(titulo, video_id):
     nome = titulo.lower()
@@ -50,8 +52,8 @@ def opa():
 def gerar_rss(itens):
     rss_items = ""
     for item in itens:
-        titulo = item['name']
-        link = f"https://drive.google.com/uc?export=download&id={item['id']}"
+        titulo = escape_xml(item['name'])
+        link = escapar_url(f"https://drive.google.com/uc?export=download&id={item['id']}")
         data = datetime.strptime(item['createdTime'], "%Y-%m-%dT%H:%M:%S.%fZ")
         pub_date = data.strftime("%a, %d %b %Y %H:%M:%S GMT")
 
@@ -79,6 +81,12 @@ def gerar_rss(itens):
     with open("rss.xml", "w", encoding="utf-8") as f:
         f.write(rss_feed)
     print("✅ RSS gerado em 'rss.xml'")
+
+def escape_xml(texto):
+    return html.escape(texto)
+
+def escapar_url(url):
+    return url.replace("&", "&amp;")
 
 if __name__ == "__main__":
     opa()
