@@ -4,20 +4,21 @@
         <link>https://site.com</link>
         <description>Um podcast sobre Politic e Politic.</description>
         <language>pt-br</language>
-        <itunes:author>karl Oliveira</itunes:author>
+
+        <itunes:author>test</itunes:author>
         <itunes:owner>
-            <itunes:name>karl</itunes:name>
-            <itunes:email>karl@email.com</itunes:email>
+            <itunes:name>Seu Nome</itunes:name>
+            <itunes:email>seuemail@exemplo.com</itunes:email>
         </itunes:owner>
         <itunes:image href="https://seudominio.com/capa.jpg"/>
-        <itunes:category text="Politic"/>
+        <itunes:category text="News"/>
         <itunes:explicit>no</itunes:explicit>
         
         <item>
             <title>6dud-BT6nss_MORAES decreta PRISÃO de ZAMBELLI e PROIBE FILHO e MÃE de TEREM REDES SOCIAIS</title>
             <link>https://drive.google.com/uc?export=download&amp;id=1PBhSNrIoSrv0zBnYlrGdj1OedDAwftCJ</link>
             <guid>https://drive.google.com/uc?export=download&amp;id=1PBhSNrIoSrv0zBnYlrGdj1OedDAwftCJ</guid>
-            <pubDate>Wed    , 04 Jun 2025 19:00:15 GMT</pubDate>
+            <pubDate>Wed, 04 Jun 2025 19:00:15 GMT</pubDate>
             <enclosure url="https://drive.google.com/uc?export=download&amp;id=1PBhSNrIoSrv0zBnYlrGdj1OedDAwftCJ" type="audio/mpeg"/>
         </item>
         
