@@ -63,7 +63,7 @@ def gerar_rss(itens):
             <link>{link}</link>
             <guid>{link}</guid>
             <pubDate>{pub_date}</pubDate>
-            <enclosure url="{link}" type="audio/mpeg"/>
+            <enclosure url="{link}" type="audio/mpeg" length="1234567"/>
         </item>
         """
 

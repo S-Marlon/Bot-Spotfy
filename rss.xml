@@ -1,17 +1,17 @@
 <rss version="2.0"
      xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
     <channel>
-        <title>Podcast Exemplo</title>
+        <title>Ancapsu hoje</title>
         <link>https://site.com</link>
-        <description>Um podcast sobre Politic e Politic.</description>
+        <description>Um podcast sobre news</description>
         <language>pt-br</language>
 
-        <itunes:author>test</itunes:author>
+        <itunes:author>Mark</itunes:author>
         <itunes:owner>
-            <itunes:name>Seu Nome</itunes:name>
-            <itunes:email>seuemail@exemplo.com</itunes:email>
+            <itunes:name>Mark</itunes:name>
+            <itunes:email>marlovcbol.com.br@gmail.com</itunes:email>
         </itunes:owner>
-        <itunes:image href="https://seudominio.com/capa.jpg"/>
+        <itunes:image href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"/>
         <itunes:category text="News"/>
         <itunes:explicit>no</itunes:explicit>
         
@@ -20,7 +20,7 @@
             <link>https://drive.google.com/uc?export=download&amp;id=1PBhSNrIoSrv0zBnYlrGdj1OedDAwftCJ</link>
             <guid>https://drive.google.com/uc?export=download&amp;id=1PBhSNrIoSrv0zBnYlrGdj1OedDAwftCJ</guid>
             <pubDate>Wed, 04 Jun 2025 19:00:15 GMT</pubDate>
-            <enclosure url="https://drive.google.com/uc?export=download&amp;id=1PBhSNrIoSrv0zBnYlrGdj1OedDAwftCJ" type="audio/mpeg"/>
+            <enclosure url="https://drive.google.com/uc?export=download&amp;id=1PBhSNrIoSrv0zBnYlrGdj1OedDAwftCJ" type="audio/mpeg"  length="1234567"/>
         </item>
         
         <item>
@@ -28,7 +28,7 @@
             <link>https://drive.google.com/uc?export=download&amp;id=1CeOP_a7iSXW_imzGdhTM5dFVXECGhlz9</link>
             <guid>https://drive.google.com/uc?export=download&amp;id=1CeOP_a7iSXW_imzGdhTM5dFVXECGhlz9</guid>
             <pubDate>Mon, 26 May 2025 18:52:32 GMT</pubDate>
-            <enclosure url="https://drive.google.com/uc?export=download&amp;id=1CeOP_a7iSXW_imzGdhTM5dFVXECGhlz9" type="audio/mpeg"/>
+            <enclosure url="https://drive.google.com/uc?export=download&amp;id=1CeOP_a7iSXW_imzGdhTM5dFVXECGhlz9" type="audio/mpeg"  length="1234567"/>
         </item>
         
     </channel>
