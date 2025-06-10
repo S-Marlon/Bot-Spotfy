@@ -1,24 +1,45 @@
-from xml.etree.ElementTree import Element, SubElement, ElementTree
-import datetime
+import html
+from datetime import datetime
+from drive import PASTA_ID
 
-def criar_rss(episodios, titulo_podcast, link_site, descricao, email_autor, caminho_saida='rss.xml'):
-    rss = Element('rss', version='2.0')
-    channel = SubElement(rss, 'channel')
+def escape_xml(texto):
+    return html.escape(texto)
 
-    SubElement(channel, 'title').text = titulo_podcast
-    SubElement(channel, 'link').text = link_site
-    SubElement(channel, 'description').text = descricao
-    SubElement(channel, 'language').text = 'pt-br'
-    SubElement(channel, 'managingEditor').text = email_autor
+def escapar_url(url):
+    return url.replace("&", "&amp;")
 
-    for episodio in episodios:
-        item = SubElement(channel, 'item')
-        SubElement(item, 'title').text = episodio['titulo']
-        SubElement(item, 'description').text = episodio['descricao']
-        SubElement(item, 'pubDate').text = episodio['data'].strftime('%a, %d %b %Y %H:%M:%S +0000')
-        SubElement(item, 'enclosure', url=episodio['url'], type='audio/mpeg')
-        SubElement(item, 'guid').text = episodio['url']
+def gerar_rss(itens):
+    rss_items = ""
+    for item in itens:
+        titulo = escape_xml(item['name'])
+        caminho = f"http://localhost:5000/audios/{item['id']}.mp3"
+        link = escapar_url(f"https://drive.google.com/uc?export=download&id={item['id']}")
+        data = datetime.strptime(item['createdTime'], "%Y-%m-%dT%H:%M:%S.%fZ")
+        pub_date = data.strftime("%a, %d %b %Y %H:%M:%S GMT")
 
-    tree = ElementTree(rss)
-    tree.write(caminho_saida, encoding='utf-8', xml_declaration=True)
-    print(f"RSS gerado com sucesso em {caminho_saida}")
+        rss_items += f"""
+        <item>
+            <title>{titulo}</title>
+            <link>{caminho}</link>
+            <guid>{caminho}</guid>
+            <pubDate>{pub_date}</pubDate>
+            <enclosure url="{caminho}" type="audio/mpeg" length="1234567"/>
+        </item>
+        """
+
+    rss_feed = f"""<?xml version="1.0" encoding="UTF-8" ?>
+    <rss version="2.0">
+    <channel>
+        <title>Podcast do Bot</title>
+        <link>https://drive.google.com/drive/folders/{PASTA_ID}</link>
+        <description>Podcast gerado automaticamente</description>
+        <language>pt-br</language>
+        {rss_items}
+    </channel>
+    </rss>"""
+    
+    with open("rss.xml", "w", encoding="utf-8") as f:
+        f.write(rss_feed)
+    print("✅ RSS gerado em 'rss.xml'")
+
+    # proxima ação, enviar o rss gerado para o app.py e fazer a leitura de acordo com ID no drive
