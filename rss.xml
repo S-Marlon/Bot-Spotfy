@@ -1,34 +1,41 @@
-<rss version="2.0"
-     xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+<?xml version="1.0" encoding="UTF-8" ?>
+    <rss version="2.0">
     <channel>
         <title>Ancapsu hoje</title>
-        <link>https://site.com</link>
-        <description>Um podcast sobre news</description>
+        <link>https://drive.google.com/drive/folders/1HyUXJMzvlziH8ylb57Fta2zE8BHeDHD3</link>
+        <description>Podcast gerado automaticamente</description>
         <language>pt-br</language>
-
-        <itunes:author>Mark</itunes:author>
-        <itunes:owner>
-            <itunes:name>Mark</itunes:name>
-            <itunes:email>marlovcbol.com.br@gmail.com</itunes:email>
-        </itunes:owner>
-        <itunes:image href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"/>
-        <itunes:category text="News"/>
-        <itunes:explicit>no</itunes:explicit>
+        
+        <item>
+            <title>JUtPyOsq6Qc_IMPRENSA NÃO GOSTOU do DEPOIMENTO do BOLSONARO: SINAL que FOI BOM</title>
+            <link>http://localhost:5000/audios/1n368qO3Chnzy-EnysEnI79vhgL_yDH4o.mp3</link>
+            <guid>http://localhost:5000/audios/1n368qO3Chnzy-EnysEnI79vhgL_yDH4o.mp3</guid>
+            <pubDate>Wed, 11 Jun 2025 16:41:45 GMT</pubDate>
+            <enclosure url="http://localhost:5000/audios/1n368qO3Chnzy-EnysEnI79vhgL_yDH4o.mp3" type="audio/mpeg" length="1234567"/>
+        </item>
+        
+        <item>
+            <title>JUtPyOsq6Qc_IMPRENSA NÃO GOSTOU do DEPOIMENTO do BOLSONARO: SINAL que FOI BOM</title>
+            <link>http://localhost:5000/audios/1K2h1UwdPu0uA_97qfWqlS3wEa6EukVhR.mp3</link>
+            <guid>http://localhost:5000/audios/1K2h1UwdPu0uA_97qfWqlS3wEa6EukVhR.mp3</guid>
+            <pubDate>Wed, 11 Jun 2025 16:29:27 GMT</pubDate>
+            <enclosure url="http://localhost:5000/audios/1K2h1UwdPu0uA_97qfWqlS3wEa6EukVhR.mp3" type="audio/mpeg" length="1234567"/>
+        </item>
         
         <item>
             <title>6dud-BT6nss_MORAES decreta PRISÃO de ZAMBELLI e PROIBE FILHO e MÃE de TEREM REDES SOCIAIS</title>
-            <link>https://drive.google.com/uc?export=download&amp;id=1PBhSNrIoSrv0zBnYlrGdj1OedDAwftCJ</link>
-            <guid>https://drive.google.com/uc?export=download&amp;id=1PBhSNrIoSrv0zBnYlrGdj1OedDAwftCJ</guid>
+            <link>http://localhost:5000/audios/1PBhSNrIoSrv0zBnYlrGdj1OedDAwftCJ.mp3</link>
+            <guid>http://localhost:5000/audios/1PBhSNrIoSrv0zBnYlrGdj1OedDAwftCJ.mp3</guid>
             <pubDate>Wed, 04 Jun 2025 19:00:15 GMT</pubDate>
-            <enclosure url="https://drive.google.com/uc?export=download&amp;id=1PBhSNrIoSrv0zBnYlrGdj1OedDAwftCJ" type="audio/mpeg"  length="1234567"/>
+            <enclosure url="http://localhost:5000/audios/1PBhSNrIoSrv0zBnYlrGdj1OedDAwftCJ.mp3" type="audio/mpeg" length="1234567"/>
         </item>
         
         <item>
             <title>SbJPTpcDDC0_LULA tem ARMAS SECRETAS: FAZER COMICIOS VAZIOS e jogar DINHEIRO FORA</title>
-            <link>https://drive.google.com/uc?export=download&amp;id=1CeOP_a7iSXW_imzGdhTM5dFVXECGhlz9</link>
-            <guid>https://drive.google.com/uc?export=download&amp;id=1CeOP_a7iSXW_imzGdhTM5dFVXECGhlz9</guid>
+            <link>http://localhost:5000/audios/1CeOP_a7iSXW_imzGdhTM5dFVXECGhlz9.mp3</link>
+            <guid>http://localhost:5000/audios/1CeOP_a7iSXW_imzGdhTM5dFVXECGhlz9.mp3</guid>
             <pubDate>Mon, 26 May 2025 18:52:32 GMT</pubDate>
-            <enclosure url="https://drive.google.com/uc?export=download&amp;id=1CeOP_a7iSXW_imzGdhTM5dFVXECGhlz9" type="audio/mpeg"  length="1234567"/>
+            <enclosure url="http://localhost:5000/audios/1CeOP_a7iSXW_imzGdhTM5dFVXECGhlz9.mp3" type="audio/mpeg" length="1234567"/>
         </item>
         
     </channel>

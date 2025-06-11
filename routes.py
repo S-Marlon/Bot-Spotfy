@@ -1,21 +1,41 @@
-from app import app
-from app import redirect
-from sum import *
+import random
+from flask import redirect, render_template
+from app_instance import app
+from app import init
+from shared import itens
 
+def soma(soma1,soma2):
+    result = soma1 + soma2
+    return result
 
 @app.route("/")
 def homepage():
-    result = soma(5,2)
-    return f"Servidor de redirecionamento de podcast ativo. {result}"
+    result = soma(random.randint(1, 30),random.randint(1, 30))
+    return render_template("index.html")
 
-drive_id = "1PBhSNrIoSrv0zBnYlrGdj1OedDAwftCJ"
+@app.route("/start", methods=["POST"])
+def start():
+    
+    print("▶️ Aplicação iniciada")
+    
+    init()
+    
+    return "✅ Aplicação iniciada com sucesso!"
 
 @app.route("/audios")
 def audios():
     return "pasta de audios"
 
-@app.route(f"/audios/{drive_id}.mp3")
-def audio():
-    drive_id = "1PBhSNrIoSrv0zBnYlrGdj1OedDAwftCJ"
-    download_url = f"https://drive.google.com/uc?export=download&id={drive_id}"
-    return redirect(download_url)
+#def rota não esta conseguindo baixar corretamente
+# provavelmente não recebe o iten atualizado de dhare.py
+@app.route("/audios/<drive_id>.mp3")
+def audio(drive_id):
+    for item in itens:
+        if item["id"] == drive_id:
+            download_url = f"https://drive.google.com/uc?export=download&id={item['id']}"
+            return redirect(download_url)
+        else:
+            return "nenhum video foi encontrado"
+    return "nenhum video foi encontssrado"
+        
+    

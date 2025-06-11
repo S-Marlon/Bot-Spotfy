@@ -44,15 +44,24 @@ def main():
     # else:
     #     print("Nenhum arquivo de áudio encontrado na pasta.")
 
-
-def opa():
     arquivos = listar_arquivos()
     if not arquivos:
         print("Nenhum arquivo de áudio encontrado na pasta.")
         return
     
-    gerar_rss(arquivos)
+    gerar_rss(arquivos) 
+    
+    return arquivos #gerar_rss(arquivos) 
+
+
+def opa():
+    arquivos = listar_arquivos()
+    # if not arquivos:
+    #     print("Nenhum arquivo de áudio encontrado na pasta.")
+    #     return
+    
+    return arquivos #gerar_rss(arquivos) 
 
 
 if __name__ == "__main__":
-    opa()
+    main()

@@ -30,7 +30,7 @@ def gerar_rss(itens):
     rss_feed = f"""<?xml version="1.0" encoding="UTF-8" ?>
     <rss version="2.0">
     <channel>
-        <title>Podcast do Bot</title>
+        <title>Ancapsu hoje</title>
         <link>https://drive.google.com/drive/folders/{PASTA_ID}</link>
         <description>Podcast gerado automaticamente</description>
         <language>pt-br</language>
@@ -41,5 +41,6 @@ def gerar_rss(itens):
     with open("rss.xml", "w", encoding="utf-8") as f:
         f.write(rss_feed)
     print("✅ RSS gerado em 'rss.xml'")
+    return "dados"
 
     # proxima ação, enviar o rss gerado para o app.py e fazer a leitura de acordo com ID no drive
