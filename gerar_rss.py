@@ -38,9 +38,9 @@ def gerar_rss(itens):
     </channel>
     </rss>"""
     
-    with open("template/rss.xml", "w", encoding="utf-8") as f:
+    with open("templates/rss.xml", "w", encoding="utf-8") as f:
         f.write(rss_feed)
-    print("✅ RSS gerado em 'template/rss.xml'")
+    print("✅ RSS gerado em 'templates/rss.xml'")
     return "dados"
 
     # proxima ação, enviar o rss gerado para o app.py e fazer a leitura de acordo com ID no drive

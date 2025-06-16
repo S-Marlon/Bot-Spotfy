@@ -51,7 +51,7 @@ def main():
     
     gerar_rss(arquivos) 
     
-    return arquivos #gerar_rss(arquivos) 
+    return  #gerar_rss(arquivos) 
 
 
 def opa():

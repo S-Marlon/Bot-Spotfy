@@ -1,6 +1,6 @@
 import random
 from flask import redirect, render_template
-from app_instance import app,itens
+from app_instance import app,pega
 from app import init
 
 def soma(soma1,soma2):
@@ -33,6 +33,9 @@ def audios():
 # provavelmente não recebe o iten atualizado de dhare.py
 @app.route("/audios/<drive_id>.mp3")
 def audio(drive_id):
+    itens = pega()
+    
+    print(f"vai toma {itens}")
     for item in itens:
         if item["id"] == drive_id:
             download_url = f"https://drive.google.com/uc?export=download&id={item['id']}"

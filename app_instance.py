@@ -1,8 +1,11 @@
 from flask import Flask
 app = Flask(__name__)
+from drive import listar_arquivos
 
 itens = []
 
-def pega(data):
+def pega():
+    arquivos = listar_arquivos()
     global itens
-    itens = data
+    itens = arquivos
+    return itens

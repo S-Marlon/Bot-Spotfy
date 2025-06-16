@@ -78,7 +78,7 @@ def upload_arquivo(caminho_local, nome_no_drive):
 
 
 def listar_arquivos():
-    creds = Credentials.from_authorized_user_file('token.json', SCOPES)
+    
     service = autenticar_drive()
 
     results = service.files().list(
