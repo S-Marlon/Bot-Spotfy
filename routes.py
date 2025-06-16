@@ -1,8 +1,7 @@
 import random
 from flask import redirect, render_template
-from app_instance import app
+from app_instance import app,itens
 from app import init
-from shared import itens
 
 def soma(soma1,soma2):
     result = soma1 + soma2
@@ -12,6 +11,10 @@ def soma(soma1,soma2):
 def homepage():
     result = soma(random.randint(1, 30),random.randint(1, 30))
     return render_template("index.html")
+
+@app.route("/feed")
+def feedrss():
+    return render_template("rss.xml")
 
 @app.route("/start", methods=["POST"])
 def start():
