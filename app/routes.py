@@ -1,7 +1,7 @@
 import random
 from flask import redirect, render_template
-from app_instance import app,pega
-from app import init
+from app.app_instance import app,pega
+from app.app import init
 
 def soma(soma1,soma2):
     result = soma1 + soma2

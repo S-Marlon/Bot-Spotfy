@@ -1,6 +1,6 @@
 from flask import Flask
 app = Flask(__name__)
-from drive import listar_arquivos
+from app.logic.drive import listar_arquivos
 
 itens = []
 

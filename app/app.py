@@ -1,6 +1,6 @@
-from app_instance import app,pega
-from main import main
-from routes import *
+from app.app_instance import app,pega
+from app.logic.main import main
+from app.routes import *
 
 
 # def rotina: terá um timer que executará o app de tempos em tempos

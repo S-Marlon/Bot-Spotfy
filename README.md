@@ -49,17 +49,22 @@ CHANNEL_ID=UCxxxxxxxxxxxxxxxx
 python main.py
 ```
 ```bash
-youtube-podcast-bot/
-├── main.py                  # Script principal que une todos os passos
-├── verificar_novos_videos.py
-├── baixar_audio.py
-├── gerar_rss.py
-├── auth_podbean
-├── ultimo_video.json        # Armazena ID do último vídeo processado
-├── audios/                  # Pasta onde ficam os MP3 extraídos
-├── rss.xml                  # Feed gerado automaticamente
-├── requirements.txt
-└── .env
+Bot-Spotfy/
+├── app/
+│   ├── __init__.py         # Inicializa o app Flask
+│   ├── routes.py           # Todas as rotas Flask
+│   ├── logic/              # Funções de lógica separadas
+│   │   ├── main.py         # Função principal que você quer rodar
+│   │   ├── drive.py        # Lógica de upload e autenticação Google Drive
+│   │   └── rss_generator.py# Geração do RSS Feed
+│   ├── static/
+│   │   └── ...             # Arquivos públicos (css, js, imagens)
+│   └── templates/
+│       └── index.html      # Página com botão para iniciar processo
+├── audios/                 # Pasta onde os áudios serão armazenados
+├── requirements.txt        # Dependências do projeto
+├── run.py                  # Script principal que roda o app
+└── README.md
 ```
 ---
 

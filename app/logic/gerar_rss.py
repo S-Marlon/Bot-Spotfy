@@ -1,6 +1,6 @@
 import html
 from datetime import datetime
-from drive import PASTA_ID
+from app.logic.drive import PASTA_ID
 
 def escape_xml(texto):
     return html.escape(texto)
@@ -38,9 +38,9 @@ def gerar_rss(itens):
     </channel>
     </rss>"""
     
-    with open("templates/rss.xml", "w", encoding="utf-8") as f:
+    with open("app/templates/rss.xml", "w", encoding="utf-8") as f:
         f.write(rss_feed)
-    print("✅ RSS gerado em 'templates/rss.xml'")
+    print("✅ RSS gerado em 'app/templates/rss.xml'")
     return "dados"
 
     # proxima ação, enviar o rss gerado para o app.py e fazer a leitura de acordo com ID no drive

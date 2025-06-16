@@ -1,9 +1,9 @@
 import os
-from gerar_rss import gerar_rss
-from verificar_novos_videos import verificar_novo_video
-from baixar_audio import baixar_audio
-from drive import upload_arquivo
-from drive import listar_arquivos
+from app.logic.gerar_rss import gerar_rss
+from app.logic.verificar_novos_videos import verificar_novo_video
+from app.logic.baixar_audio import baixar_audio
+from app.logic.drive import upload_arquivo
+from app.logic.drive import listar_arquivos
 
 # def limpar_nome_arquivo(titulo, video_id):
 #     nome = titulo.lower()
